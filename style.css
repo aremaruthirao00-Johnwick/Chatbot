@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /* White text for contrast on video */
+}
+
+/* Make main app background transparent to show video */
+.stApp {
+    background-color: transparent;
+}
+
+/* Chat container styling - Glassmorphism */
+.stChatMessage {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* User message styling */
+.stChatMessage[data-testid="user-message"] {
+    background-color: rgba(26, 115, 232, 0.7);
+    /* Semi-transparent blue */
+    border-left: 4px solid #8ab4f8;
+}
+
+/* Assistant message styling */
+.stChatMessage[data-testid="assistant-message"] {
+    background-color: rgba(52, 168, 83, 0.7);
+    /* Semi-transparent green */
+    border-left: 4px solid #81c995;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input container */
+.stChatInput {
+    border-radius: 20px;
+}
+
+/* Header styling */
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p,
+li,
+div {
+    color: #ffffff;
+    /* Ensure text is white */
+}
+
+/* Sidebar transparency */
+[data-testid="stSidebar"] {
+    background-color: transparent !important;
+    border-right: none;
+}
+
+/* Remove sidebar decoration */
+[data-testid="stSidebarNav"] {
+    background-color: transparent !important;
+}
+
+/* Transparent Header */
+.stApp>header {
+    background-color: transparent !important;
+}
+
+/* Transparent Bottom Panel */
+[data-testid="stBottom"] {
+    background-color: transparent !important;
+}
+
+/* Style the actual input box to be visible but glass-like */
+.stChatInput input {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+
+/* Hide default hamburger menu and footer for cleaner look */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
