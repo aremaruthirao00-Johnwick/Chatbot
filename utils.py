@@ -11,7 +11,7 @@ def get_response(user_input, api_key=None):
     if api_key:
         try:
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-pro')
+            model = genai.GenerativeModel('gemini-1.5-flash')
             
             # System prompt to encourage real-life answers and sources
             prompt = f"""
